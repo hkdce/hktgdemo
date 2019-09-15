@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import { connect } from 'react-redux';
 import TGCaseSelectPane from './TGCaseSelectPane';
 import TGCasePanel from './TGCasePanel';
+import TGCaseVideo from './TGCasesVideos';
 import { ReduxState } from './Types';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -31,6 +32,7 @@ const App: React.FunctionComponent<Props> = (props) => {
           </Col>
           <Col className="thinCol" md="3">
             <TGCasePanel/>
+             <TGCaseVideo/>
           </Col>
         </Row>
       </Container>
