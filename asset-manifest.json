@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/hktgdemo/static/css/main.ea54f418.chunk.css",
+    "main.js": "/hktgdemo/static/js/main.8d09adfb.chunk.js",
+    "main.js.map": "/hktgdemo/static/js/main.8d09adfb.chunk.js.map",
+    "runtime~main.js": "/hktgdemo/static/js/runtime~main.3059f623.js",
+    "runtime~main.js.map": "/hktgdemo/static/js/runtime~main.3059f623.js.map",
+    "static/css/2.adca5a3a.chunk.css": "/hktgdemo/static/css/2.adca5a3a.chunk.css",
+    "static/js/2.5e14dbaf.chunk.js": "/hktgdemo/static/js/2.5e14dbaf.chunk.js",
+    "static/js/2.5e14dbaf.chunk.js.map": "/hktgdemo/static/js/2.5e14dbaf.chunk.js.map",
+    "index.html": "/hktgdemo/index.html",
+    "precache-manifest.5053cd056bf3d16e1d38e41b885bef7e.js": "/hktgdemo/precache-manifest.5053cd056bf3d16e1d38e41b885bef7e.js",
+    "service-worker.js": "/hktgdemo/service-worker.js",
+    "static/css/2.adca5a3a.chunk.css.map": "/hktgdemo/static/css/2.adca5a3a.chunk.css.map",
+    "static/css/main.ea54f418.chunk.css.map": "/hktgdemo/static/css/main.ea54f418.chunk.css.map"
+  }
+}
