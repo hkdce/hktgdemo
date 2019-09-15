@@ -20,7 +20,7 @@ type OwnProps = {
 
 type Props = OwnProps;
 
-class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
+class GoogleMapMarker extends React.Component<Props, State> {
   static contextType = GoogleMapContext;
 
   constructor(props: Props) {
@@ -72,4 +72,4 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
   }
 }
 
-export default GoogleMapGeoJSONOverlay;
+export default GoogleMapMarker;
