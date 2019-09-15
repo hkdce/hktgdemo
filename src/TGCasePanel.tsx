@@ -2,7 +2,8 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { connect } from 'react-redux';
 import { TGCase, ReduxState } from './Types';
-import { tgCases } from './data/Data';
+import { tgCases, videoRefs } from './data/Data';
+import ReactPlayer from 'react-player'
 
 type StateProps = {
   caseId?: string;
