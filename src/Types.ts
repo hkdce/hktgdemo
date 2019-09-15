@@ -24,7 +24,7 @@ export type TGCase = {
   lon: number,
   quantity: number,
   cartridge: string,
-  live_video_refs: string,
+  live_video_refs: string[][],
 }
 
 export type TGCases = {
