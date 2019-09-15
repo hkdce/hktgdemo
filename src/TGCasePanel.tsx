@@ -54,17 +54,23 @@ function getElapsedSecondsFromTimeString(timeString: string):number{
 const TGCasePanel: React.FunctionComponent<Props> = (props) => {
   if (props.caseId) {
     const tgCase: TGCase = tgCases[props.caseId];
-    console.log(tgCases, props.caseId, tgCase);
     return (
+      <div>
       <Card>
         <Card.Header>{ tgCase.case_id }</Card.Header>
         <Card.Body>
           <div>Site: { tgCase.case_site }</div>
           <div>Cartridge: { tgCase.cartridge }</div>
           <div>Quantity: { tgCase.quantity }</div>
-          <div>Videos: { tgCase.live_video_refs }</div>
         </Card.Body>
       </Card>
+      <div className="videosCol">
+          {tgCase.live_video_refs.map(iVideoEvidence => {
+            return renderVideoPlayer(iVideoEvidence)
+          })}
+      </div>
+
+      </div>
     );
   } else {
     return null;
