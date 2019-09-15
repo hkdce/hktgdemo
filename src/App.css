@@ -1,0 +1,19 @@
+.thinCol {
+  margin: 0px;
+  padding: 0px;
+}
+
+.thinTab {
+  margin: 0px;
+  padding: 0.1rem 0.25rem 0.1rem 0.25rem;
+}
+
+.navbar-nav .nav-link {
+  padding: 0rem 0.2rem;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  padding-right: 0.1rem;
+  padding-left: 0.1rem;
+}
