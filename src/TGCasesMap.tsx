@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import GoogleMap from './components/GoogleMap';
 import { TGCase, ReduxState } from './Types';
+import GoogleMapMarker from './components/GoogleMapMarker';
+import { selectCase } from './Actions';
 
 type StateProps = {
   selectedCaseId?: string;
@@ -23,9 +25,19 @@ class TGCasesMap extends React.Component<Props> {
     return (
       <GoogleMap>
         {
+          this.props.tgCasesList.map(tgCase =>
+            <GoogleMapMarker title={ tgCase.case_id }
+                             tag={ tgCase.case_id } lat={ tgCase.lat } lng={ tgCase.lon }
+                             visible={ true }
+                             onClick={ this.onMarkerClick.bind(this)} />
+          )
         }
       </GoogleMap>
     );
+  }
+
+  onMarkerClick(caseId: string) {
+    this.props.dispatch(selectCase(caseId));
   }
 }
 

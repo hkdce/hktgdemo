@@ -24,6 +24,10 @@ const TGCasePanel: React.FunctionComponent<Props> = (props) => {
       <Card>
         <Card.Header>{ tgCase.case_id }</Card.Header>
         <Card.Body>
+          <div>Site: { tgCase.case_site }</div>
+          <div>Cartridge: { tgCase.cartridge }</div>
+          <div>Quantity: { tgCase.quantity }</div>
+          <div>Videos: { tgCase.live_video_refs }</div>
         </Card.Body>
       </Card>
     );
